@@ -1,0 +1,80 @@
+:root{
+    --cor0: #F5F3F5;
+    --cor1: #FFFD98;
+    --cor2: #429EA6;
+    --cor3: #153B50;
+    --cor4: #090C08;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+nav{
+    background-image: url(images/back.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--cor0);
+    padding: 8px;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#cont{
+    background-color: #000000d3;
+    width: fit-content;
+    margin: auto;
+    border-radius: 15px;
+    padding: 18px;
+    margin-top: 230px;
+}
+
+nav > div > h1{
+    font-size: 4rem;
+    text-shadow: 1px 1px #000;
+}
+
+nav > div > a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--cor0);
+    transition-duration: .4s;
+    padding: 2px;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+nav > div > a:hover{
+    border: 1px solid var(--cor1);
+}
+
+/* ---------- footer ---------- */
+footer{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 4px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: var(--cor0);
+    transition-duration: .4s;
+    padding: 2px;
+}
+
+footer > a:hover{
+    background-color: var(--cor0);
+    color: var(--cor4);
+    border-radius: 5px;
+}
