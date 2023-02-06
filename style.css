@@ -7,15 +7,20 @@
 }
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
 }
 
 body{
-    background-color: var(--cor0);
+    background-color: #000;
 }
 
-nav{
+ /*   ANTES DO SCROLL/CLICK     */
+.depois{
+    transition-duration: .5s;
+}
+
+nav.antes{
     background-image: url(images/back.jpg);
     background-position: top;
     background-size: cover;
@@ -23,12 +28,12 @@ nav{
     color: var(--cor0);
     padding: 8px;
     height: 600px;
-    width: 100%;
+    width: 98.8%;
     text-align: center;
 }
 
 
-#cont{
+.antes#cont{
     background-color: #000000d3;
     width: fit-content;
     margin: auto;
@@ -37,12 +42,12 @@ nav{
     margin-top: 230px;
 }
 
-nav > div > h1{
+h1.antes{
     font-size: 4rem;
     text-shadow: 1px 1px #000;
 }
 
-nav > div > a{
+a.antes{
     font-size: 2rem;
     text-decoration: none;
     color: var(--cor0);
@@ -52,8 +57,54 @@ nav > div > a{
     margin: 2px;
 }
 
-nav > div > a:hover{
+a.antes:hover{
     border: 1px solid var(--cor1);
+}
+
+
+/*         DEPOIS DO SCROLL/CLICK             */
+
+nav.depois{
+    background-color: var(--cor4);
+    width: 100%;
+}
+
+a.depois{
+    text-decoration: none;
+    color: var(--cor0);
+    margin-left: 8px;
+    border-radius: 9px;
+    padding: 2px;
+    border: 1px solid var(--cor4);
+}
+
+a.depois:hover{
+    border: 1px solid var(--cor1);
+}
+
+h1.depois{
+    font-size: 1rem;
+    position: absolute;
+    left: 8px;
+    color: var(--cor0);
+}
+.depois#cont{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+/* ---------- Body/Main ----------*/
+
+section#aboutme{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-size: 1.5rem;
+}
+
+#js{
+    color: #ddd900;
+    font-size: 1.6rem;
 }
 
 /* ---------- footer ---------- */
@@ -62,7 +113,7 @@ footer{
     color: var(--cor0);
     text-align: center;
     bottom: 0;
-    width: 100%;
+    width: 99.4%;
     padding: 4px;
 }
 
