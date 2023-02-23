@@ -1,0 +1,103 @@
+:root{
+    --cor0 : #fff;
+    --cor1 : #395169;
+    --cor2 : #102f5e;
+    --cor3 : #17163e;
+    --cor4 : #030325;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+#tsparticles {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--cor0);
+}
+
+#container{
+    padding: 26px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 15px;
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.678);
+}
+
+nav > ul{
+    margin-top: 80px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    margin-right: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--cor0);
+    transition-duration: .4s;
+    padding: .3em;
+    border-radius: 10px;
+}
+
+li a:hover{
+    background-color: var(--cor0);
+    color: var(--cor3);
+}
+
+#sobreMim{
+    width: 100%;
+    background-color: var(--cor4);
+    margin: 0%;
+    color: var(--cor0);
+}
+
+#sobreMim h1{
+    margin: 0;
+}
+
+
+
+/*-------------footer-------------*/
+
+footer{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    text-align: center;
+    padding: 4px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: var(--cor0);
+    transition-duration: .4s;
+    padding: .1em;
+}
+
+footer > a:hover{
+    background-color: var(--cor0);
+    color: var(--cor3);
+    border-radius: 5px;
+}
