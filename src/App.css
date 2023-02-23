@@ -4,6 +4,7 @@
     --cor2 : #102f5e;
     --cor3 : #17163e;
     --cor4 : #030325;
+    --cor5 : rgba(237, 261, 285, 0.089);
 }
 
 *{
@@ -26,6 +27,12 @@ body{
     z-index: -1;
 }
 
+#profilePhoto{
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 1.5px 1.5px var(--cor4);
+}
+
 .App-header {
     min-height: 100vh;
     display: flex;
@@ -38,9 +45,10 @@ body{
 
 #container{
     padding: 26px;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: var(--cor5);
     border-radius: 15px;
-    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.678);
+    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.378);
+    box-shadow: 1.5px 1.5px 1.5px var(--cor4);
 }
 
 nav > ul{
@@ -67,17 +75,29 @@ li a:hover{
     color: var(--cor3);
 }
 
-#sobreMim{
+#sobreMim, #tech{
     width: 100%;
     background-color: var(--cor4);
     margin: 0%;
     color: var(--cor0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #sobreMim h1{
     margin: 0;
 }
 
+#textAbout{
+    max-width: 400px;
+    margin: 60px 0px;
+}
+
+#imgAbout{
+    min-width: 400px;
+}
 
 
 /*-------------footer-------------*/
