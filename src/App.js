@@ -6,8 +6,8 @@ import particlesOptions from "./particles.json";
 import {Init , Sobre, Tech, Projects, Footer} from "./components.js"
 
 function App() {
-    const particlesInit = useCallback(main => {
-        loadFull(main);
+    const particlesInit = useCallback(async main => {
+        await loadFull(main);
     }, [])
 
     return (
