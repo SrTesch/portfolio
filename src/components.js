@@ -46,7 +46,31 @@ export class Tech extends React.Component{
                     <h1>Tecnologias de meu interesse</h1>
                     <p>HTML, CSS, Js, React, Linguagem C, MySql, Python, Pandas</p>
                 </div>
+                <div id='techImages'>
+                    <img src='#'/>
+                </div>
             </section>
         )
     }
+}
+
+
+export class Projects extends React.Component{
+    render(){
+        return(
+            <div id='projects'>
+                
+            </div>
+        )
+    }
+}
+
+
+
+
+export class Footer extends React.Component{
+    render(){
+        return(
+            <footer>Developed by <a href="https://github.com/srTesch" target="_blank" rel='noreferrer'>@Tesch</a></footer>
+        )};
 }
