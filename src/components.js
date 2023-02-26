@@ -9,7 +9,7 @@ export class Init extends React.Component{
         <div id="container">
             <img src={image} alt='Imagem de Perfil' id="profilePhoto" />
             <h1>Pedro Tesch</h1>
-            <p>Front-End Developer</p>
+            <p>Desenvolvedor Front-End</p>
             <nav>
                 <ul>
                     <li><a href="#sobreMim">Sobre mim</a></li>
@@ -30,7 +30,7 @@ export class Sobre extends React.Component{
                 <img src='#' alt='#' />
             </div>
             <div id="textAbout">
-                <h1>Olá! Pode me chamar só de Tesch!</h1>
+                <h1>Olá! Meu nome é Pedro Tesch!</h1>
                 <p>Tenho 22 anos e atualmente estou cursando Engenharia da Computação pelo CEFET-RJ. <br />Resolvi estudar front-end por conta própria para complementar meus conhecimentos de back obtidos na Faculdade e hoje virei um entusiasta do Desenvolvimento Web</p>
             </div>
             </section>

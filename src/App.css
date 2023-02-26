@@ -41,6 +41,7 @@ body{
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: var(--cor0);
+    user-select: none;
 }
 
 #container{
@@ -68,6 +69,8 @@ li a{
     transition-duration: .4s;
     padding: .3em;
     border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
 }
 
 li a:hover{
