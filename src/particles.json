@@ -4,10 +4,6 @@
     "color": {
       "value": "#000"
     },
-    "image": "",
-    "position": "",
-    "repeat": "",
-    "size": "",
     "opacity": 1
   },
   "backgroundMask": {
@@ -176,7 +172,7 @@
         "height": 1080
       },
       "limit": 0,
-      "value": 100
+      "value": 150
     },
     "opacity": {
       "random": {
@@ -421,6 +417,24 @@
       "duration": 1,
       "factor": 1,
       "speed": 1
+    }
+  },
+  "interactivity":{
+    "events":{
+      "onhover":{
+        "enable":true,
+        "mode":"repulse"
+      },
+      "onclick":{
+        "enable":true,
+        "mode":"push"
+      }
+    },
+    "modes":{
+      "repulse":{
+        "distance":150,
+        "duration":0.8
+      }
     }
   },
   "pauseOnBlur": true,

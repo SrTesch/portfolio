@@ -44,10 +44,12 @@ export class Tech extends React.Component{
             <section id="tech">
                 <div id="techSkills">
                     <h1>Tecnologias de meu interesse</h1>
-                    <p>HTML, CSS, Js, React, Linguagem C, MySql, Python, Pandas</p>
+                    <p>*Pode passar o mouse em cima do ícone para aparecer uma breve descrição sobre</p>
                 </div>
                 <div id='techImages'>
-                    <img src='#'/>
+                    <img src='#' alt='#' id='oi'/>
+                    <img src='#' alt='#' id='oi2'/>
+                    <img src='#' alt='#' id='oi3'/>
                 </div>
             </section>
         )

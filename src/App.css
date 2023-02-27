@@ -7,6 +7,11 @@
     --cor5 : rgba(237, 261, 285, 0.089);
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -109,10 +114,13 @@ li a:hover{
 }
 
 
+#oi, #oi1, #oi2{
+    min-width: 60px;
+}
+
 /*-------------footer-------------*/
 
 footer{
-    background-color: var(--cor3);
     color: var(--cor0);
     text-align: center;
     padding: 4px;
