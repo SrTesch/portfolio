@@ -1,140 +1,33 @@
-:root{
-    --cor0 : #fff;
-    --cor1 : #395169;
-    --cor2 : #102f5e;
-    --cor3 : #17163e;
-    --cor4 : #030325;
-    --cor5 : rgba(237, 261, 285, 0.089);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #16181A;
+    color: white;
     scroll-behavior: smooth;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    text-align: center;
-}
-
-#tsparticles {
-    position: fixed;
-    height: 100%;
+.limitar-secao {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    z-index: -1;
+    max-width: 1324px;
+    margin: 0 auto;
 }
 
-#profilePhoto{
-    max-width: 200px;
-    border-radius: 50%;
-    box-shadow: 1.5px 1.5px var(--cor4);
+::-webkit-scrollbar {
+    width: 6px;
+    max-width: 20px;
 }
 
-.App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: var(--cor0);
-    user-select: none;
+::-webkit-scrollbar-track {
+    background-color: #16181a;
 }
 
-#container{
-    padding: 26px;
-    background-color: var(--cor5);
-    border-radius: 15px;
-    text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.378);
-    box-shadow: 1.5px 1.5px 1.5px var(--cor4);
+::-webkit-scrollbar-thumb {
+    background-color: #f53232;
+    border-radius: 3px;
 }
 
-nav > ul{
-    margin-top: 80px;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-li{
-    margin-right: 20px;
-}
-
-li a{
-    text-decoration: none;
-    color: var(--cor0);
-    transition-duration: .4s;
-    padding: .3em;
-    border-radius: 10px;
-    user-select: none;
-    cursor: pointer;
-}
-
-li a:hover{
-    background-color: var(--cor0);
-    color: var(--cor3);
-}
-
-#sobreMim, #tech, #projects{
-    width: 100%;
-    background-color: var(--cor4);
-    margin: 0%;
-    color: var(--cor0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 15px;
-}
-
-#projects{
-    min-height: 500px;
-    background-color: var(--cor1);
-}
-
-#sobreMim h1{
-    margin: 0;
-}
-
-#textAbout{
-    max-width: 400px;
-    margin: 60px 0px;
-}
-
-#imgAbout{
-    min-width: 400px;
-}
-
-
-#oi, #oi1, #oi2{
-    min-width: 60px;
-}
-
-/*-------------footer-------------*/
-
-footer{
-    color: var(--cor0);
-    text-align: center;
-    padding: 4px;
-}
-
-footer > a {
-    text-decoration: none;
-    color: var(--cor0);
-    transition-duration: .4s;
-    padding: .1em;
-}
-
-footer > a:hover{
-    background-color: var(--cor0);
-    color: var(--cor3);
-    border-radius: 5px;
-}
+    
