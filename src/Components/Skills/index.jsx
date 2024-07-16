@@ -26,7 +26,7 @@ export default function Skills() {
                 <SkillsCard
                     imagem={logoFerramentas}
                     descricao='Ferramentas/Plataformas'
-                    tecnologias={['Git, GitHub, Arch Linux, AWS, Azzure, SCRUM, Docker.']}
+                    tecnologias={['Git, GitHub, Arch Linux, AWS, Azure, SCRUM, Docker.']}
                 />
             </div>
         </section >
