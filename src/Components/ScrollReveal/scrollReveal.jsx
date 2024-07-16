@@ -9,12 +9,12 @@ const ScrollRevealComponent = () => {
     });
 
   
-    sr.reveal('.descricao-home h1', {distance: '40px', delay: 450, origin: 'left' });
-    sr.reveal('.descricao-home span', {distance: '40px', delay: 450, origin: 'right' });
-    sr.reveal('.descricao-home p', {distance: '30px', delay: 620, origin: 'right' });
-    sr.reveal('.secao-link', {distance: '40px', delay: 610, origin: 'left' });
-    sr.reveal('.secao-redes', {distance: '40px', delay: 720, origin: 'bottom' });
-    sr.reveal('.banner-home', {distance: '40px', delay: 750, origin: 'right' });
+    sr.reveal('.descricao-home h1', {distance: '40px', delay: 300, origin: 'left' });
+    sr.reveal('.descricao-home span', {distance: '40px', delay: 300, origin: 'right' });
+    sr.reveal('.descricao-home p', {distance: '30px', delay: 400, origin: 'right' });
+    sr.reveal('.secao-link', {distance: '40px', delay: 400, origin: 'left' });
+    sr.reveal('.secao-redes', {distance: '40px', delay: 500, origin: 'bottom' });
+    sr.reveal('.banner-home', {distance: '40px', delay: 500, origin: 'right' });
 
     sr.reveal('.secao-sobre', {distance: '40px', delay: 270, origin: 'top' });
     sr.reveal('.sobre-descricao h4', {distance: '40px', delay: 280, origin: 'top' });

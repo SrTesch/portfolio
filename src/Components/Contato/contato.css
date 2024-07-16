@@ -18,9 +18,14 @@
     border: none;
     border:  2px solid #f53232;
     background-color: #f2f2f2;
-    box-shadow: 1px 1px 10px #f53232;
+    /* box-shadow: .5px .5px 10px #f53232; */
     color: black;
 }
+
+#inp:focus{
+    box-shadow: .5px .5px 10px #f53232;
+}
+
 .formulario textarea {
     width: 700px;
     padding: 10px 12px;
@@ -48,6 +53,7 @@
     justify-content: center;
     margin: 0 auto;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .subtitulo-contato {
