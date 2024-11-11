@@ -1,29 +1,38 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import React from 'react';
 import ProjetoCard from './projetocard.jsx';
 import './projeto.css';
-// import printAgencia from '../../img/agencia.jpg';
+import printWbSat from '../../img/wbsat.png'
 import printRRank from '../../img/printRegionalRank.png'
 import printMulheresConectadas from '../../img/mulheresconectadasPC.png'
+import printTodoListinha from  "../../img/todolistinha.png"
 
 export default function Projeto() {
-    // const [verMais, setVerMais] = useState(false);
-    // const [fraseBotao, setFraseBotao] = useState("Ver mais");
+    const [verMais, setVerMais] = useState(false);
+    const [fraseBotao, setFraseBotao] = useState("Ver mais");
 
-    // const handleVerMaisClick = () => {
-    //     if (verMais) {
-    //         setVerMais(false);
-    //         setFraseBotao('Ver mais');
-    //     } else {
-    //         setVerMais(true);
-    //         setFraseBotao('Ver menos');
-    //     }
-    // };
-
+    const handleVerMaisClick = () => {
+        if (verMais) {
+            setVerMais(false);
+            setFraseBotao('Ver mais');
+        } else {
+            setVerMais(true);
+            setFraseBotao('Ver menos');
+        }
+    };
+    
     return (
         <section id='projetos' className='limitar-secao secao-projetos'>
             <h2 className='subtitulo-projeto'>Meus projetos</h2>
             <div className='secao-card-projetos'>
+                <ProjetoCard
+                    imagem={printWbSat}
+                    titulo='Empresa de Controle de Frotas'
+                    descricao='O site da WBSAT (Empresa de rastreadores e controle de frotas) oferece uma navegação fluida e intuitiva, permitindo aos usuários explorarem os diversos serviços com facilidade e prazer.'
+                    tecnologias={['HTML', 'CSS', 'TypeScript', 'REACT.JS']}
+                    hospedagemLink='https://wbsat.com.br'
+                    githubLink='https://github.com/SrTesch/wbSat'
+                />
                 <ProjetoCard
                     imagem={printMulheresConectadas}
                     titulo='MulheresConectadas'
@@ -40,45 +49,29 @@ export default function Projeto() {
                     hospedagemLink='https://ranking-estadual-wca.leinadium.dev/'
                     githubLink='https://github.com/Leinadium/wca-states'
                 />
-                {/* <ProjetoCard
-                    imagem={printAgencia}
-                    titulo='Agencia de Branding'
-                    descricao='O site da Agência de Branding oferece uma navegação fluida e intuitiva através do seu portfólio de trabalhos, permitindo aos usuários explorarem os diversos projetos de branding com facilidade e prazer.'
-                    tecnologias={['HTML', 'CSS', 'JS', 'REACT.JS']}
-                    hospedagemLink='https://agencia-de-branding-lac.vercel.app'
-                    githubLink='https://github.com/diogokimisima/Agencia-de-branding'
-                /> */}
 
 
             </div>
 
             <div className='secao-projeto-ver-mais'>
-                {/* {verMais && (
+                {verMais && (
                     <div className='secao-card-projetos'>
                         <ProjetoCard
-                            imagem={printLista}
-                            titulo='Lista de Participantes'
-                            descricao='O site projeto Lista de Participantes de Evento, uma aplicação front-end em ReactJS. Esta aplicação permite listar participantes de um evento, realizar buscas, navegar pelas páginas da lista e visualizar detalhes de cada participantes.'
-                            tecnologias={['REACT.JS', 'TYPESCRIPT', 'TAILWIND']}
-                            hospedagemLink='https://lista-participantes-evento.vercel.app'
-                            githubLink='https://github.com/diogokimisima/Lista-participantes-evento'
-                        />
-                        <ProjetoCard
-                            imagem={printCardapio}
-                            titulo='Cardapio Restaurante'
-                            descricao='O site de cardápio oferece uma experiência imersiva e intuitiva, com design moderno e responsivo, tornando a exploração do menu do cardapio mais agradável para os usuários e clientes.'
-                            tecnologias={['HTML', 'CSS', 'JS', 'REACT.JS']}
-                            hospedagemLink='https://cardapio-restaurante-ten.vercel.app'
-                            githubLink='https://github.com/diogokimisima/Cardapio-Restaurante'
+                            imagem={printTodoListinha}
+                            titulo='To-Do Listinha'
+                            descricao='Uma simples e funcional To-Do List que utiliza LocalStorage para salvar os dados. Eu uso atualmente para diversos fins como: lista de mercado; Coisas para resolver na minha rotina diária; Etc.'
+                            tecnologias={['HTML', 'CSS', 'JS']}
+                            hospedagemLink='https://todolistinha.netlify.app'
+                            githubLink='https://github.com/SrTesch/todoList'
                         />
 
                     </div>
-                )} */}
+                )}
             </div>
 
-            {/* <div className='secao-botao-ver'>
+            <div className='secao-botao-ver'>
                 <button className='botao-ver' onClick={handleVerMaisClick}>{fraseBotao}</button>
-            </div> */}
+            </div>
         </section>
     );
 }
